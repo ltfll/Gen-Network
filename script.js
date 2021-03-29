@@ -26,7 +26,7 @@ let sketch = function (p) {
 
   // Sound
   let soundActivated = false
-  let parallelSounds = 5;
+  let parallelSounds = 4;
   let synth;
   let chromaticScale = [
     "C",
