@@ -23,7 +23,7 @@ let sketch = function (p) {
 
   // Sound
   let soundActivated = false
-  let parallelSounds = 2;
+  let parallelSounds = 5;
   let synth;
   let pentatonicScale = [
     "A",
@@ -33,8 +33,8 @@ let sketch = function (p) {
     "G"
   ];
   let baseOctave = 2;
-  let numOctaves = 5;
-  let velocity = 0.5;
+  let numOctaves = 4;
+  let velocity = 0.4;
   let minInterval;
   let maxInterval;
 
