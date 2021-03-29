@@ -39,7 +39,7 @@ let sketch = function (p) {
   ];
   let minOctave = 3;
   let maxOctave = 5;
-  let velocity = 0.05;
+  let velocity = 0.4;
   let minInterval;
   let maxInterval;
   let uniformSound = true
