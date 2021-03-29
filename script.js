@@ -39,8 +39,8 @@ let sketch = function (p) {
   ];
   let minOctave = 3;
   let maxOctave = 5;
-  let dur = 0.2;
-  let time = 0;
+  let dur = 0.1;
+  let time = 1;
   let velocity = 0.1;
   let minInterval;
   let maxInterval;
