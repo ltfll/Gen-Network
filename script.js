@@ -48,8 +48,8 @@ let sketch = function (p) {
 
   let MIN_INTERVAL = 1000;
   let MAX_INTERVAL = 2000;
- delay = new p5.Delay();
- delay.process(osc, 0.12, .7, 2300);
+  let delay = new p5.Delay();
+  let delay.process(osc, 0.12, .7, 2300);
 
   // Images
   let muteImage
