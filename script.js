@@ -48,6 +48,9 @@ let sketch = function (p) {
 
   let MIN_INTERVAL = 1000;
   let MAX_INTERVAL = 2000;
+    
+  Compressor = new p5.Compressor();
+  set(.003, 30, 12, -24, .25);
 
   // Images
   let muteImage
