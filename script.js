@@ -34,7 +34,7 @@ let sketch = function (p) {
   ];
   let baseOctave = 2;
   let numOctaves = 4;
-  let velocity = 0.3;
+  let velocity = 0.2;
   let minInterval;
   let maxInterval;
 
