@@ -39,8 +39,9 @@ let sketch = function (p) {
   ];
   let minOctave = 3;
   let maxOctave = 5;
-  let dur = 0.7;
-  let velocity = 0.1;
+  let dur = 0.5;
+  let time = 0;
+  let velocity = 0.05;
   let minInterval;
   let maxInterval;
   let uniformSound = true
