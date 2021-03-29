@@ -27,7 +27,7 @@ let sketch = function (p) {
   // Sound
   let soundActivated = false
   let parallelSounds = 4;
-  let synth;
+  let polySynth;
   let chromaticScale = [
     "C",
     "D",
@@ -39,6 +39,7 @@ let sketch = function (p) {
   ];
   let minOctave = 3;
   let maxOctave = 5;
+  let dur = 0.7;
   let velocity = 0.1;
   let minInterval;
   let maxInterval;
