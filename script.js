@@ -41,7 +41,7 @@ let sketch = function (p) {
   let maxOctave = 5;
   let dur = 0.1;
   let time = 0;
-  let velocity = 0.05;
+  let velocity = 0.01;
   let minInterval;
   let maxInterval;
   let uniformSound = true
