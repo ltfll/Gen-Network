@@ -26,8 +26,8 @@ let sketch = function (p) {
 
   // Sound
   let soundActivated = false
-  let parallelSounds = 4;
-  let polySynth;
+  let parallelSounds = 5;
+  let synth;
   let chromaticScale = [
     "C",
     "D",
@@ -39,16 +39,14 @@ let sketch = function (p) {
   ];
   let minOctave = 3;
   let maxOctave = 5;
-  let dur = 0.1;
-  let time = 0;
-  let velocity = 0.01;
+  let velocity = 0.1;
   let minInterval;
   let maxInterval;
   let uniformSound = true
 
   let MIN_INTERVAL = 1000;
   let MAX_INTERVAL = 2000;
-  
+
   // Images
   let muteImage
   let unmuteImage
@@ -66,11 +64,18 @@ let sketch = function (p) {
     p.createCanvas(900, 900);
     nodeWidth = p.width / NODES_Y;
     synth = new p5.PolySynth();
+    synth.setADSR(1, 2, 0, 1)
+
+    synth.disconnect()
+
+    let reverb = new p5.Reverb();
+    reverb.process(synth, 0.75, 25);
+
     p.createSliders()
     p.createButtons()
     p.createEnvironment();
     p.textFont(font)
-    p.getAudioContext().suspend();
+    // p.getAudioContext().suspend();
   };
 
   p.createButtons = () => {
@@ -85,7 +90,7 @@ let sketch = function (p) {
     listSliders.push(minOctaveSlider = new Slider("Min Octaves", "Integer", p.width * 2 / 4 + 10, p.height - 50, p.width / 4 - 30, 20, 2, 6))
     listSliders.push(maxOctaveSlider = new Slider("Max Octaves", "Integer", p.width * 3 / 4 + 10, p.height - 50, p.width / 4 - 30, 20, 2, 6))
 
-    intervalSlider.value = 0.2;
+    intervalSlider.value = 0.1;
     notesSlider.value = 1;
     minOctaveSlider.value = 3;
     maxOctaveSlider.value = 5;
