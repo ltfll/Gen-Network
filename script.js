@@ -69,7 +69,7 @@ let sketch = function (p) {
     synth.disconnect()
 
     let reverb = new p5.Reverb();
-    reverb.process(synth, 0.10, 60;
+    reverb.process(synth, 0.10, 60);
 
     p.createSliders()
     p.createButtons()
