@@ -1,5 +1,5 @@
 # Alto
-Alto is a generative system that produces sounds and random networks based on Boolean networks & Proprioceptive neurons
+Alto is a generative system that produces music with random networks based on Boolean networks & Proprioceptive neurons
 
 #Instructions
 -------------
